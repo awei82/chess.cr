@@ -1,0 +1,13 @@
+name: chess
+version: 0.1.0
+
+authors:
+  - Andrew W <andrew.wei@cosell.io>
+
+targets:
+  chess:
+    main: src/chess.cr
+
+crystal: '>= 1.11.2'
+
+license: MIT
