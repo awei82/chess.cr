@@ -6,7 +6,7 @@ authors:
 
 targets:
   chess:
-    main: src/chess.cr
+    main: src/cli_runner.cr
 
 crystal: '>= 1.11.2'
 

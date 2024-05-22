@@ -1,6 +1,7 @@
-# TODO: Write documentation for `Chess`
+require "./board"
+require "./pieces"
+require "./game"
+
 module Chess
   VERSION = "0.1.0"
-
-  # TODO: Put your code here
 end
