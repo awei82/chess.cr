@@ -13,14 +13,16 @@ module Chess
 
         valid_move = false
         while !valid_move
+          puts "***Check***" if game.state  == :check
+            
           print "#{game.action.to_s.capitalize}'s turn: "
           move = gets
 
           begin
             game.make_move(move.to_s)
             valid_move = true
-          rescue
-            puts "Invalid move. Try again."
+          rescue e
+            puts "Invalid move: #{e.message}. Try again."
             move_valid = false
           end
         end
